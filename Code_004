@@ -1,0 +1,30 @@
+#PYTHON - #BASIC - #LEARN - #CODE_003
+
+#   =   =   =   =   =   =   =   =   =   =   =   =  =    =   =
+#RECEBA QUATRO VALORES CORRESPONDENTES AS NOTAS DE UM ALUNO.
+#CALCULE A MÉDIA DAS NOTAS.
+#ATRIBUIR O STATUS DE APROVADO OU REPROVADO.
+#   =   =   =   =   =   =   =   =   =   =   =   =  =    =   =
+
+#DECLARAÇÃO DE VARIAVÉIS. LISTA. INTEIRO...
+nota = []
+cont = 1
+
+#FUNÇÃO <WHILE> REPRODUZ A CONDIÇÃO ATÉ QUE ELA SEJA FALSA...
+#O MÉTODO <APPEND> ADICIONA UM ELEMENTO AO FINAL DE UMA LISTA [NOTA]...
+while cont <5:
+    nota.append(float(input(f"PROVA<{cont}>\nQual a nota do aluno: ")))
+    print("\n")
+    cont +=1 
+
+#<SUM> SOMA TODOS OS VALORES DA LISTA NOTA...
+#<LEN> TRABALHA COM A QUANTIDADE DE ITENS DENTRO DA LISTA NOTA...
+#CRIANDO A VARIÁVEL MÉDIA E PROCESSANDO O RESULTADO...
+m = sum(nota) / len(nota)
+
+#<IF> AVALIA A EXPRESSÃO LÓGICA E RETORNA UM VALOR QUANDO VERDADEIRA...
+#<ELSE> AVALIA A EXPRESSÃO LÓGICA E RETORNA UM VALOR QUANDO FALSA...
+if m>=6:
+    print(f"Aluno Aprovado Com {m}% de Aproveitamento")
+else:
+    print(f"Aluno Reprovado... Aproveitamento de {m:.2f}%")
