@@ -1,9 +1,9 @@
 #PYTHON - #BASIC - #LEARN - #CODE_003
 
-#   =   =   =   =   =   =   =   =   =   =   =   =  =
+#   =   =   =   =   =   =   =
 #SOLICITE O NOME DO USUÁRIO.
 #DÊ BOAS VINDAS AO MESMO.
-#   =   =   =   =   =   =   =   =   =   =   =   =  =
+#   =   =   =   =   =   =   =
 
 #SOLICITANDO QUE O USUÁRIO INSIRA UM NOME.
 name = input(f"Qual é o seu nome? ")
