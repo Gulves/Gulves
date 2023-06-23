@@ -1,0 +1,52 @@
+#PYTHON - #BASIC - #LEARN - #CODE_007
+
+#   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+#Faça um Programa que pergunte quanto você ganha por hora
+#e o número de horas trabalhadas no mês. Calcule e mostre o total
+#do seu salário no referido mês, sabendo-se que são descontados
+#11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato,
+#faça um programa que nos dê:
+#
+#salário bruto.
+#quanto pagou ao INSS.
+#quanto pagou ao sindicato.
+#o salário líquido.
+#calcule os descontos e o salário líquido, conforme a tabela abaixo:
+#    
+#+ Salário Bruto : R$
+#- IR (11%) : R$
+#- INSS (8%) : R$
+#- Sindicato ( 5%) : R$
+#= Salário Liquido : R$
+#Obs.: Salário Bruto - Descontos = Salário Líquido.
+
+#fonte: https://wiki.python.org.br/EstruturaSequencial
+
+#   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+
+#   ENTRADA DE DADOS    =   =   =
+name = (input(f"Olá, qual o seu nome? "))
+work_m = float(input(f"Quantas horas por mês você trabalha {name}? "))
+gain_h = float(input(f"Quantos você ganha por hora {name}? "))
+
+sal_brt = work_m*gain_h
+
+#   CALCULO IR  =   =   =   =   =
+ir = (sal_brt*0.08)
+
+#   CALCULO INSS    =   =   =   =
+inss = (sal_brt*0.11)
+
+#   CALCULO SINDICATO   =   =   =
+sind = (sal_brt*0.05)
+
+#   CALCULO LIQUIDO =   =   =   =
+sal_liq = (((sal_brt - ir)-inss)-sind)
+
+#   MOSTRANDO RESULTADOS...
+print(f"\n{name}, o seu salário esse mês: ")
+print(f"BRUTO ........... =R${sal_brt:,.2f}")
+print(f"IR .............. -R${ir:,.2f}")
+print(f"INSS ............ -R${inss:,.2f}")
+print(f"SINDICATO ....... -R${sind:,.2f}")
+print(f"LIQUIDO ......... =R${sal_liq:,.2f}")
