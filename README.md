@@ -3,7 +3,7 @@
 - 👀 I’m interested in programming
 - 🌱 I’m currently learning programming
 - 💞️ I want to collaborate for the technological market
-- 📫 How to reach me...
+- 📫 How to reach me github.com/Gulves
 
 <!---
 Gulves/Gulves is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
