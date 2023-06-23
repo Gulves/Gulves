@@ -1,0 +1,18 @@
+#PYTHON - #BASIC - #LEARN - #CODE_001
+
+#   =   =   =   =   =   =   =   =   =   =   =   =  =
+#RECEBA UM VALOR NUMERICO INTEIRO.
+#APRESENTE NA TELA O ANTECESSOR DO VALOR INFORMADO.
+#APRESENTE NA TELA O SUCESSOR DO VALOR INFORMADO.
+#   =   =   =   =   =   =   =   =   =   =   =   =  =
+
+#DECLARANDO VARIAVEL E RECEBENDO UM VALOR INTEIRO ALEATÓRIO...
+numero = int(input(f"Informe um número inteiro: "))
+
+#OPERAÇÕES PARA OBTER O ANTECESSOR E O SUCESSOR DA VARIAVEL...
+ant = numero-1
+suc = numero+1 
+
+#PRINTANDO NA TELA OS RESULTADOS SOLICITADOS.
+print(f"\nO número informado é {numero}")
+print(f"Seu antecessor é {ant}\nSeu sucessor é {suc}")
