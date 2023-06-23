@@ -1,0 +1,15 @@
+#PYTHON - #BASIC - #LEARN - #CODE_005
+
+#   =   =   =   =   =   =   =   =   =   =
+#RECEBA UM VALOR NUMÉRICO.
+#FORMATE O VALOR RECEBIDO PARA MOEDA.
+#   =   =   =   =   =   =   =   =   =   =
+
+#RECEBENDO UM VALOR...
+din = float(input(f"Informe salário desejado: "))
+
+#FORMATANDO O VALOR PARA A MOEDA 'REAL'...
+din = f"R${din:,.2f}"
+
+#RESULTADO...
+print(f"\nO salário que você deseja é {din}")
